@@ -14,3 +14,7 @@ credentials.sbt
 
 # Scala-IDE specific
 .scala_dependencies
+
+# Sonarqube related files
+.scannerwork
+sonar-project.properties

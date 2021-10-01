@@ -12,6 +12,18 @@ import scala.language.postfixOps
  * @author Stephen Samuel */
 class PriceEngine(generator: QuoteGenerator) extends Actor {
 
+  class Box(length: Int, width: Int, height: Int) {
+  def volume: Int = {
+    val s = length * width
+    s * height
+  }
+
+  def area: Int = {
+    val s = length * width
+    s * height
+  }
+}
+
   var cancellable: Cancellable = _
   var name = ""
   name = name
